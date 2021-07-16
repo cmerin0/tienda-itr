@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/usuarios
+
+###
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+    "nombre": "pedro infante",
+    "usuario": "pinfante",
+    "contrasena": "12312312",
+    "rol": "moderador"
+}
+
+###
+GET http://localhost:3000/usuario/2
+
+###
+PUT http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nombre": "Recesa Merino",
+    "usuario": "rmerino",
+    "contrasena": "12312312",
+    "rol": "usuario"
+}
+
+###
+DELETE http://localhost:3000/usuario/3

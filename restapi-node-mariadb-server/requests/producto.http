@@ -1,0 +1,34 @@
+###
+GET http://localhost:3000/productos
+
+###
+POST http://localhost:3000/producto
+Content-Type: application/json
+
+{
+    "nombre": "mayonesa",
+    "descripcion": "tarra de mayonesa",
+    "precio": 12.5,
+    "cantidad": 150
+}
+
+###
+GET http://localhost:3000/producto/3
+
+###
+PUT http://localhost:3000/producto
+Content-Type: application/json
+
+{
+    "id": 4,
+    "nombre": "alcohol gel",
+    "descripcion": "tarra de alcohol en gel",
+    "precio": 7.5,
+    "cantidad": 10
+}
+
+###
+DELETE http://localhost:3000/producto/5
+
+###
+GET http://localhost:3000/productos/buscar/hig
